@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "qmsspkg_DS"
 version = "0.1.0"
-description = "Python package with basic cypher routines"
+description = "Python package with basic cipher routines"
 authors = ["Donald Stephens"]
 license = "MIT"
 readme = "README.md"

@@ -1,6 +1,6 @@
 # qmsspkg_DS
 
-Python package with basic cypher routines
+Python package with basic cipher routines
 
 ## Installation
 
