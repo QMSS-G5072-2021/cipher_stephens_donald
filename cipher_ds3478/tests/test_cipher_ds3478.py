@@ -3,7 +3,7 @@ from cipher_ds3478 import cipher_ds3478
 import pytest
 
 def test_cipher_single_word():
-    result = cipher(text = 'absent', shift = 1, encrypt = True)
+    result = cipher_ds3478.cipher(text = 'absent', shift = 1, encrypt = True)
     assert(result) == 'bctfou', 'Should be ''bctfou'''
 
 @pytest.mark.parametrize("example, shift, expected", [
@@ -17,5 +17,5 @@ def test_cipher_single_word():
     ('$', 1, '$')
 ])
 def test_cipher_cases_looping(example, shift, expected):
-    result = cipher(text = example, shift = shift, encrypt = True)
+    result = cipher_ds3478.cipher(text = example, shift = shift, encrypt = True)
     assert result == expected
