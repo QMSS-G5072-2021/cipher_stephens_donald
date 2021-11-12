@@ -1,0 +1,48 @@
+:py:mod:`cipher_ds3478.cipher_ds3478`
+=====================================
+
+.. py:module:: cipher_ds3478.cipher_ds3478
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   cipher_ds3478.cipher_ds3478.cipher
+
+
+
+.. py:function:: cipher(text: str, shift: int, encrypt: bool = True) -> str
+
+   Encrypts or decrypts supplied text. Each letter is replaced by a letter
+   some fixed number of positions down the alphabet. Apparently, Julius Caesar
+   used it in his private correspondence.
+
+   :param text: the string to be encrypted or decrypted
+   :type text: str
+   :param shift: parameterizes the encryption / decryption
+   :type shift: int
+   :param encrypt: if true then encrypt; otherwise descrypt. Default value is True
+   :type encrypt: bool, optional
+
+   :returns: a string that is encrypted or decrypted
+   :rtype: str
+
+   :raises TypeError: when 'shift' parameter is not an int
+
+   .. rubric:: Examples
+
+   >>> from qmsspkg_DS import qmsspkg_DS
+   >>> cipher(text = 'absent', shift = 1, encrypt = True)
+   bctfou
+   >>> cipher(text = 'absent', shift = 10, encrypt = True)
+   klCoxD
+   >>> cipher(text = 'klCoxD', shift = 10, encrypt = False)
+   absent
+
+

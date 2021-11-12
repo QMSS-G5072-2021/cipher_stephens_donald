@@ -1,0 +1,23 @@
+:py:mod:`cipher_ds3478`
+=======================
+
+.. py:module:: cipher_ds3478
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   cipher_ds3478/index.rst
+
+
+Package Contents
+----------------
+
+.. py:data:: __version__
+   
+
+   
+
